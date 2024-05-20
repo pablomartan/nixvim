@@ -115,6 +115,22 @@
         "type": "github"
       }
     },
+    "kiwi": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1710167014,
+        "narHash": "sha256-aXM6oDxR5TX/aDpF3yH4a3XWnAYqFMSNh9SngNlSMWU=",
+        "owner": "serenevoid",
+        "repo": "kiwi.nvim",
+        "rev": "1a625771e3d3d9f50ca28a4501c11842f6c1ec1e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "serenevoid",
+        "repo": "kiwi.nvim",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1715668745,
@@ -238,6 +254,7 @@
     "root": {
       "inputs": {
         "flake-parts": "flake-parts",
+        "kiwi": "kiwi",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim"
       }

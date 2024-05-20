@@ -8,6 +8,10 @@
         url = "github:nix-community/nixvim/nixos-23.11";
         inputs.nixpkgs.follows = "nixpkgs";
     };
+    kiwi = {
+      url = "github:serenevoid/kiwi.nvim";
+      flake = false;
+    };
   };
 
   outputs = { nixpkgs, nixvim, flake-parts, ... } @ inputs:
