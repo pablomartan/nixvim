@@ -1,11 +1,11 @@
 { pkgs, ... }:
 {
   imports = [
-    ./plugins
+    ./autocmds.nix
+    ./globals.nix
     ./keymaps.nix
     ./options.nix
-    ./autocmds.nix
+    ./plugins
     ./ui.nix
-    ./globals.nix
   ];
 }
