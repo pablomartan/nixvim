@@ -6,9 +6,6 @@
     ./options.nix
     ./autocmds.nix
     ./ui.nix
+    ./globals.nix
   ];
-
-  globals = {
-    neoformat_try_node_exe = 1;
-  };
 }
