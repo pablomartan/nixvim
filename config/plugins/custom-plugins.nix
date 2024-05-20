@@ -9,17 +9,13 @@ let
     };
   };
 in {
-  extraPlugins = with pkgs; [
+  extraPlugins = [
+    pkgs.vimPlugins.plenary-nvim
     (fromGitHub "1a625771e3d3d9f50ca28a4501c11842f6c1ec1e" "serenevoid/kiwi.nvim")
     (fromGitHub "fb84fad97cd4b51caee3c865e8a33a0d413b77a8" "f-person/git-blame.nvim")
   ];
 
   extraConfigLua = ''
-    local kiwi = require('kiwi').setup({
-      {
-        path = "/home/cleverpy/Documentos/wiki"
-      }
-    })
     local kiwi = require('kiwi')
 
     -- Necessary keybindings
