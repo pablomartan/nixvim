@@ -4,6 +4,7 @@
     ./plugins
     ./keymaps.nix
     ./options.nix
+    ./autocmds.nix
   ];
 
   globals = {
@@ -14,12 +15,4 @@
     enable = true;
     flavour = "mocha";
   };
-
-  autoCmd = [
-    {
-      event = ["BufWritePre"];
-      pattern = [ "*.js*" "*.ts*" "*.*css" ];
-      command = "Neoformat";
-    }
-  ];
 }
