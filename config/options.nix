@@ -16,6 +16,7 @@
 
     swapfile = false;
     backup = false;
+    undofile = true;
 
     hlsearch = false;
     incsearch = true;
