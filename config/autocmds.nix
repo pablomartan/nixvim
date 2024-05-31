@@ -2,7 +2,7 @@
   autoCmd = [
     {
       event = ["BufWritePre"];
-      pattern = [ "*.js*" "*.ts*" "*.*css" ];
+      pattern = ["*.js*" "*.ts*" "*.*css"];
       command = "Neoformat";
     }
   ];

@@ -4,7 +4,8 @@
 
     servers = {
       nil_ls.enable = true;
-      tsserver.enable = true;
+      # tsserver.enable = true;
+      eslint.enable = true;
       lua-ls.enable = true;
     };
 

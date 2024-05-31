@@ -1,13 +1,17 @@
-{ pkgs, lib, ... }:
-let
-  fromGitHub = rev: repo: pkgs.vimUtils.buildVimPlugin {
-    pname = "${lib.strings.sanitizeDerivationName repo}";
-    version = rev;
-    src = builtins.fetchGit {
-      url = "https://github.com/${repo}.git";
-      rev = rev;
+{
+  pkgs,
+  lib,
+  ...
+}: let
+  fromGitHub = rev: repo:
+    pkgs.vimUtils.buildVimPlugin {
+      pname = "${lib.strings.sanitizeDerivationName repo}";
+      version = rev;
+      src = builtins.fetchGit {
+        url = "https://github.com/${repo}.git";
+        rev = rev;
+      };
     };
-  };
 in {
   extraPlugins = [
     pkgs.vimPlugins.plenary-nvim
