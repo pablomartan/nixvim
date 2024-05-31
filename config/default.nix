@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   imports = [
     ./autocmds.nix
     ./globals.nix
@@ -7,5 +6,9 @@
     ./options.nix
     ./plugins
     ./ui.nix
+  ];
+
+  extraPackages = with pkgs; [
+    alejandra
   ];
 }
