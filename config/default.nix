@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   imports = [
-    ./autocmds.nix
+#    ./autocmds.nix
     ./globals.nix
     ./keymaps.nix
     ./options.nix
@@ -10,5 +10,8 @@
 
   extraPackages = with pkgs; [
     alejandra
+    jq
+    prettierd
+    mdformat
   ];
 }
