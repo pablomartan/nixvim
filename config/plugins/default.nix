@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   imports = [
     ./cmp.nix
     ./conform.nix

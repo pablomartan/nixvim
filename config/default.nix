@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   imports = [
-#    ./autocmds.nix
+    #    ./autocmds.nix
     ./globals.nix
     ./keymaps.nix
     ./options.nix
@@ -12,6 +12,5 @@
     alejandra
     jq
     prettierd
-    mdformat
   ];
 }
