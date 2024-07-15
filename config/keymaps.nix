@@ -93,56 +93,6 @@
       action = "[[\:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]";
     }
     {
-      mode = ["n" "v"];
-      key = "m";
-      action = "h";
-    }
-    {
-      mode = ["n" "v"];
-      key = "N";
-      action = "J";
-    }
-    {
-      mode = ["n" "v"];
-      key = "E";
-      action = "K";
-    }
-    {
-      mode = ["n" "v"];
-      key = "n";
-      action = "j";
-    }
-    {
-      mode = ["n" "v"];
-      key = "e";
-      action = "k";
-    }
-    {
-      mode = ["n" "v"];
-      key = "i";
-      action = "l";
-    }
-    {
-      mode = "n";
-      key = "h";
-      action = "i";
-    }
-    {
-      mode = "v";
-      key = "H";
-      action = "I";
-    }
-    {
-      mode = "n";
-      key = "k";
-      action = "n";
-    }
-    {
-      mode = "n";
-      key = "K";
-      action = "N";
-    }
-    {
       mode = "v";
       key = "N";
       action = "<cmd>m '>+1<CR>gv=gv";
