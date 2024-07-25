@@ -11,7 +11,8 @@
       typescript = [["prettierd" "prettier"]];
       typescriptreact = [["prettierd" "prettier"]];
       css = [["prettierd" "prettier"]];
-      json = ["jq"];
+      scss = [["prettierd" "prettier"]];
+      json = [["prettierd" "prettier" "jq"]];
       markdown = ["prettierd"];
     };
   };
