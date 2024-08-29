@@ -8,10 +8,6 @@
       url = "github:nix-community/nixvim/nixos-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    kiwi = {
-      url = "github:serenevoid/kiwi.nvim";
-      flake = false;
-    };
   };
 
   outputs = {
@@ -29,8 +25,6 @@
       perSystem = {
         system,
         pkgs,
-        self',
-        lib,
         ...
       }: let
         nixvim' = nixvim.legacyPackages.${system};
