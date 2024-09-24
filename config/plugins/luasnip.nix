@@ -8,7 +8,7 @@
 
     fromLua = [
       {
-        paths = ./luasnippets;
+        paths = ./snippets;
       }
     ];
   };
