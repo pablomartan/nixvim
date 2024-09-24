@@ -18,4 +18,14 @@
     jq
     prettierd
   ];
+
+  performance = {
+    combinePlugins = {
+      enable = true;
+
+      standalonePlugins = [
+        "nvim-treesitter"
+      ];
+    };
+  };
 }
