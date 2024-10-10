@@ -3,14 +3,16 @@
     enable = true;
 
     settings = {
-      section_separators = {
-        left = "";
-        right = "";
-      };
+      options = {
+        section_separators = {
+          left = "";
+          right = "";
+        };
 
-      component_separators = {
-        left = "";
-        right = "";
+        component_separators = {
+          left = "";
+          right = "";
+        };
       };
 
       sections = {
