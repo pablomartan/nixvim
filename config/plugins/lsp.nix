@@ -4,7 +4,31 @@
 
     servers = {
       nil-ls.enable = true;
-      ts-ls.enable = true;
+      ts-ls = {
+        enable = true;
+        extraOptions = {
+          __raw = ''
+            {
+              commands = {
+                OrganizeImports = {
+                  function()
+                  local params = {
+                    command = "_typescript.organizeImports",
+                    arguments = {
+                      vim.api.nvim_buf_get_name(0)
+                    },
+                    title = ""
+                  }
+
+                  vim.lsp.buf.execute_command(params)
+                  end,
+                  description = "Organize Imports"
+                }
+              }
+            }
+          '';
+        };
+      };
       eslint.enable = true;
       lua-ls.enable = true;
     };
