@@ -10,6 +10,31 @@
       org_hide_leading_stars = true;
       org_hide_emphasis_marks = true;
       #TODO: add templates
+      org_capture_templates = {
+        t = {
+          description = "Task";
+          target = "~/wiki/org/refile.org";
+          template = "** TODO %?\n %u";
+        };
+        n = {
+          description = "Note";
+          template = "- %?/n";
+          subtemplates = {
+            b = {
+              description = "Book reference";
+              template = "- /%?/, [AUTHOR] (YEAR)\n";
+              headline = "Libros";
+              target = "~/wiki/org/cosas.org";
+            };
+            l = {
+              description = "New link from clipboard";
+              template = "- [[%x][%?]]\n";
+              headline = "LBook referenceibros";
+              target = "~/wiki/org/cosas.org";
+            };
+          };
+        };
+      };
     };
   };
 }
