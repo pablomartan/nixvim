@@ -3,8 +3,8 @@
     enable = true;
 
     servers = {
-      nil-ls.enable = true;
-      ts-ls = {
+      nil_ls.enable = true;
+      ts_ls = {
         enable = true;
         extraOptions = {
           __raw = ''
@@ -30,7 +30,7 @@
         };
       };
       eslint.enable = true;
-      lua-ls.enable = true;
+      lua_ls.enable = true;
     };
 
     keymaps = {
