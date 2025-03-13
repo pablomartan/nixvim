@@ -29,7 +29,7 @@
             l = {
               description = "New link from clipboard";
               template = "- [[%x][%?]]\n";
-              headline = "LBook referenceibros";
+              headline = "General links";
               target = "~/wiki/org/cosas.org";
             };
           };
