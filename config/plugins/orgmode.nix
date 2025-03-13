@@ -22,7 +22,7 @@
           subtemplates = {
             b = {
               description = "Book reference";
-              template = "- /%?/, [AUTHOR] (YEAR)\n";
+              template = "- /%^{title}/, %^{author} (%^{year})\n";
               headline = "Libros";
               target = "~/wiki/org/cosas.org";
             };
