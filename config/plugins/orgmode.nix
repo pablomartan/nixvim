@@ -14,12 +14,15 @@
         t = {
           description = "Task";
           target = "~/wiki/org/inbox.org";
-          template = "** TODO %?\n %u";
+          template = "* TODO %?\n %u";
         };
         n = {
           description = "Note";
-          template = "- %?/n";
           subtemplates = {
+            n = {
+              description = "Plain note";
+              template = "- %?\n";
+            };
             b = {
               description = "Book reference";
               template = "- /%^{title}/, %^{author} (%^{year})\n";
