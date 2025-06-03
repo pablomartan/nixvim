@@ -31,7 +31,7 @@
       };
       eslint.enable = true;
       lua_ls.enable = true;
-      pylyzer.enable = true;
+      pyright.enable = true;
     };
 
     keymaps = {
