@@ -13,6 +13,7 @@
         scss = ["prettierd" "prettier"];
         json = ["prettierd" "prettier"];
         markdown = ["prettierd"];
+        python = ["black"];
       };
 
       format_on_save = ''

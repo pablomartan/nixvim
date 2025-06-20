@@ -10,8 +10,8 @@
 
   extraPackages = with pkgs; [
     alejandra
-    jq
     prettierd
+    black
   ];
 
   performance = {
