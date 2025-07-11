@@ -2,8 +2,8 @@
   autoCmd = [
     {
       event = ["BufWritePre"];
-      pattern = ["*.js*" "*.ts*" "*.*css"];
-      command = "Neoformat";
+      pattern = ["*.py"];
+      command = ":%s/\t/    /g";
     }
   ];
 }
