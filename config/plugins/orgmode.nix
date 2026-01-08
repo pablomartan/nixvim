@@ -1,6 +1,6 @@
 {
   plugins.orgmode = {
-    enable = true;
+    enable = false;
 
     settings = {
       org_agenda_files = "~/wiki/org/**";
