@@ -29,7 +29,7 @@
           '';
         };
       };
-      eslint.enable = true;
+      eslint.enable = false;
       lua_ls.enable = true;
       pyright.enable = true;
     };
