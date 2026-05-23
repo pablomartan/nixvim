@@ -3,6 +3,7 @@
     ./cmp.nix
     ./conform.nix
     ./custom-plugins.nix
+    ./codecompanion.nix
     ./lsp.nix
     ./lualine.nix
     ./luasnip.nix
