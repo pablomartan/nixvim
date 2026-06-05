@@ -1,23 +1,31 @@
-{
+let
+  adapter = "opencode";
+  model = "DeepSeek-V4-Flash";
+in {
   plugins.codecompanion = {
     enable = true;
 
     settings = {
       strategies = {
         chat = {
-          adapter = "opencode";
+          inherit adapter;
+          inherit model;
         };
         inline = {
-          adapter = "opencode";
+          inherit adapter;
+          inherit model;
         };
         cli = {
-          adapter = "opencode";
+          inherit adapter;
+          inherit model;
         };
         cmd = {
-          adapter = "opencode";
+          inherit adapter;
+          inherit model;
         };
         background = {
-          adapter = "opencode";
+          inherit adapter;
+          inherit model;
         };
       };
     };
