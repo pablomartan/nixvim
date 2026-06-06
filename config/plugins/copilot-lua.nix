@@ -1,7 +1,5 @@
 {pkgs, ...}: {
   plugins = {
-    copilot-lsp.enable = true;
-
     copilot-lua = {
       enable = true;
       settings = {
