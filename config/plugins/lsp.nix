@@ -32,6 +32,7 @@
       eslint.enable = true;
       lua_ls.enable = true;
       pyright.enable = true;
+      copilot.enable = true;
     };
 
     keymaps = {

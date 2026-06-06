@@ -1,6 +1,5 @@
 let
-  adapter = "opencode";
-  model = "DeepSeek-V4-Flash";
+  model = "Sonnet-4.6";
 in {
   plugins.codecompanion = {
     enable = true;
@@ -8,23 +7,18 @@ in {
     settings = {
       strategies = {
         chat = {
-          inherit adapter;
           inherit model;
         };
         inline = {
-          inherit adapter;
           inherit model;
         };
         cli = {
-          inherit adapter;
           inherit model;
         };
         cmd = {
-          inherit adapter;
           inherit model;
         };
         background = {
-          inherit adapter;
           inherit model;
         };
       };
